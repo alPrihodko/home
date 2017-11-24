@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { RelayComponent } from './relay/relay.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RelayComponent
   ],
   imports: [
     BrowserModule
