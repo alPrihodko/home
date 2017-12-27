@@ -9,15 +9,30 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import { HeaterControlComponent } from './heater-control/heater-control.component';
+import { IrrigationControlComponent } from './irrigation-control/irrigation-control.component';
+import { VentilationControlComponent } from './ventilation-control/ventilation-control.component';
+import {RouterModule, Routes} from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: 'heater', component: HeaterControlComponent },
+  { path: 'irrigation', component: IrrigationControlComponent },
+  { path: '',   redirectTo: '/', pathMatch: 'full' }
+  //{ path: '**', component: PageNotFound }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    RelayComponent
+    RelayComponent,
+    HeaterControlComponent,
+    IrrigationControlComponent,
+    VentilationControlComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatSidenavModule,
     MatButtonModule,

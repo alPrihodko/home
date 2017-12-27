@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <h1>{{title}}</h1>
-
+<div class="mat-app-background">
 <mat-card>
   <mat-card-title>Heater control</mat-card-title>
   <mat-card-content>Control heatera and pumps at home... </mat-card-content>
@@ -11,7 +11,10 @@
 
 <div></div>
 
-<mat-card>
+<a routerLink="/irrigation"
+   routerLinkActive="active">Irrigation</a>
+
+<mat-card id="irrigation" (click)="appRoute($event)">
   <mat-card-title>Irrigation control</mat-card-title>
   <mat-card-content>Monitor and manage relays for pouring garden ... </mat-card-content>
   <mat-card-actions>
@@ -23,6 +26,10 @@
   <mat-card-title>Air conditioning</mat-card-title>
   <mat-card-content>Ventilation, gas/smoke sensors ... </mat-card-content>
   <mat-card-actions>
-    <button mat-button disabled >Open</button>
+    <button mat-button disabled>Open</button>
   </mat-card-actions>
 </mat-card>
+
+<router-outlet></router-outlet>
+
+</div>
