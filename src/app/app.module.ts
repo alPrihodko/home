@@ -14,6 +14,7 @@ import { IrrigationControlComponent } from './irrigation-control/irrigation-cont
 import { VentilationControlComponent } from './ventilation-control/ventilation-control.component';
 import {RouterModule, Routes} from '@angular/router'
 import { ActivatedRoute } from '@angular/router';
+import { NavigationControlComponent } from './navigation-control/navigation-control.component';
 
 const appRoutes: Routes = [
   { path: 'heater', component: HeaterControlComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     RelayComponent,
     HeaterControlComponent,
     IrrigationControlComponent,
-    VentilationControlComponent
+    VentilationControlComponent,
+    NavigationControlComponent
   ],
   imports: [
     BrowserModule,
