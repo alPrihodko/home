@@ -19,7 +19,11 @@ import { NavigationControlComponent } from './navigation-control/navigation-cont
 const appRoutes: Routes = [
   { path: 'heater', component: HeaterControlComponent },
   { path: 'irrigation', component: IrrigationControlComponent },
-  { path: '',   redirectTo: '/', pathMatch: 'full' }
+  { path: 'ventilation', component: VentilationControlComponent },
+  { path: 'nav', component: NavigationControlComponent },
+  { path: '',   redirectTo: '/nav', pathMatch: 'full' },
+  { path: '**', redirectTo: '/nav', pathMatch: 'full' }
+
   //{ path: '**', component: PageNotFound }
 ];
 

@@ -1,3 +1,28 @@
-<p>
-  navigation-control works!
-</p>
+<mat-card (click)="appRoute($event, 'heater')">
+  <mat-card-title>Heater control</mat-card-title>
+  <mat-card-content>Control heater and pumps at home... </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Open</button>
+  </mat-card-actions>
+</mat-card>
+
+<div></div>
+
+
+<mat-card (click)="appRoute($event, 'irrigation')">
+  <mat-card-title>Irrigation control</mat-card-title>
+  <mat-card-content>Monitor and manage relays for pouring garden ... </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Open</button>
+  </mat-card-actions>
+</mat-card>
+
+<div></div>
+
+<mat-card (click)="appRoute($event, 'ventilation')">
+  <mat-card-title>Air conditioning</mat-card-title>
+  <mat-card-content>Ventilation, gas/smoke sensors ... </mat-card-content>
+  <mat-card-actions>
+    <button mat-button disabled>Open</button>
+  </mat-card-actions>
+</mat-card>
