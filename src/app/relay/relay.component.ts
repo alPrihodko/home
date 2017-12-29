@@ -8,7 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class RelayComponent implements OnInit {
 
  @Input() name: string;
-  status = 'undef';
+ @Input() status: string; // On/Off
+ @Input() state: string; // Auto/On/Off
 
   constructor() {
 
@@ -17,4 +18,13 @@ export class RelayComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
 }
+/*
+todo:
+- Load status and state when init
+- update state
+- update status
+- change state
+*/
