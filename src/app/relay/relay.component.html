@@ -1,3 +1,19 @@
-<p>
-  relay works!
-</p>
+<mat-card>
+  <mat-card-title>{{name}}</mat-card-title>
+  <mat-card-content>Status: {{status}} </mat-card-content>
+  <mat-card-actions>
+    <mat-button-toggle-group #state="matButtonToggleGroup">
+      <mat-button-toggle value="Auto">
+        Auto
+      </mat-button-toggle>
+
+      <mat-button-toggle value="On">
+          On
+      </mat-button-toggle>
+
+      <mat-button-toggle value="Off">
+          Off
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-card-actions>
+</mat-card>

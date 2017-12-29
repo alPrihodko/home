@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-relay',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RelayComponent implements OnInit {
 
-  constructor() { }
+ @Input() name: string;
+  status = 'undef';
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RelayComponent } from './relay/relay.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatButtonToggleModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 import { HeaterControlComponent } from './heater-control/heater-control.component';
@@ -43,13 +43,15 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatButtonModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
   ],
   exports: [
     MatSidenavModule,
     MatButtonModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
